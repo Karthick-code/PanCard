@@ -25,7 +25,7 @@
     }
 
     body {
-      margin:20px 20px 20px 20px;
+      margin:10px 10px 10px 10px;
       background-color: lightgoldenrodyellow;
     }
 
@@ -133,14 +133,14 @@
         </td>
       </tr>
       <tr >
-        <td ></td>
+        <td></td>
         <td>      <!-- <td colspan="2"> here i have tried fro columnspan but it doesn't changed -->
             <b>Whether mother is single parent and you wish to apply for PAN by furnishing the name of your mother only</b>
         </td>
         <td >
             <label for="yes" >Yes</label>
             <input type="radio" name="" id="yes">
-            <label for="no">No</label>
+            <label for="no" style="padding-left: 20px;">No</label>
             <input type="radio" name="" id="no">
         </td>
       </tr>
@@ -196,6 +196,74 @@
             </div>
           </b>
         </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <span class="main">*</span> 
+          <b>4. Select Parent name which is to be printed on the card</b>
+          <span class="prefix">(In case no option is provided then PAN card will be issued with father's name)</span>
+        </td>
+        <td>
+          <label for="Father's name" style="padding-left: 1px;">Father's Name</label>
+          <input type="radio" name="" id="Father's name">
+          <label for="Mother's name"style="padding-left: 20px;">Mother's name</label>
+          <input type="radio" name="" id="Mother's name">
+        </td>
+      </tr>
+      <tr>
+        <td style="width:20px;"><input type="checkbox" name="" id=""></td>
+        <td>
+          <span class="main">*</span>
+          <b>5. Date of Birth/Incorporation/Agreement/Patnership or Trust Deed/Formation of Body of Individuals/Association of Persons</b>
+        </td>
+        <td>
+          <div style="display:inline-block">
+            <label for="Month" style="padding-left: 2px;">MM</label><label for="Date" style="padding-left: 5px;">DD</label> <label for="Year" style="padding-left: 2px;">Year</label><br>
+            <input type="date" name="" id="date">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td style="width:20px;"><input type="checkbox" name="" id=""></td>
+        <td>
+          <span class="main">*</span>
+          <b>6.Gender</b>
+        </td>
+        <td>
+          <label for="Male" style="padding-left: 1px;">Male</label>
+          <input type="radio" name="" id="Male">
+          <label for="Female" style="padding-left: 20px;">Female</label>
+          <input type="radio" name="" id="Female">
+          <label for="Transgender" style="padding-left: 20px;">Transgender</label>
+          <input type="radio" name="" id="Transgender">
+        </td>
+      </tr>
+      <tr>
+        <td style="width:20px;"><input type="checkbox" name="" id=""></td>
+        <td colspan="2">
+          <b>7.Photo Mismatch</b>
+        </td>
+      </tr>
+      <tr>
+        <td style="width:20px;"><input type="checkbox" name="" id=""></td>
+        <td colspan="2">
+          <b>8.Signature Mismatch</b>
+        </td>
+      </tr>
+      <tr>
+        <td style="width:20px;"><input type="checkbox" name="" id="" checked="yes"></td>
+        <td>
+          <span class="main">*</span>
+          <b>9.Address For Communication</b>
+        </td>
+        <td>
+          <label for="Residential" style="padding-left: 1px;">Residential</label>
+          <input type="radio" name="" id="Residential">
+          <label for="Office" style="padding-left: 20px;">Office</label>
+          <input type="radio" name="" id="Office">
+        </td>
+
       </tr>
     </tbody>
   </table>
